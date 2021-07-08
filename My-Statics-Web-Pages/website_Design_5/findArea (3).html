@@ -1,0 +1,90 @@
+﻿ <div class="card-body p-1 col-md-12">
+
+                    <div class="col-md-12 row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-3 text-center">
+                                <div class=" input-group input-group-sm" style="padding-bottom:2%;">
+                                    <input class="form-control" name="SearchString" id="SearchString" value="@ViewBag.CurrentFilter" type="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="submit">
+                                            &nbsp; Search
+                                        </button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 m-1">
+                        <div class="icheck-primary d-inline"style="padding-left:25px;">
+                            <input type="checkbox" class="flat" id="acheck1">
+                            <label for="acheck1">
+                                Select All
+                            </label>
+                        </div>
+                    </div>
+                 
+                        <dic class="col-md-12 p-0 m-0">
+                            <div class="col-md-12 m-0 row">
+
+                               
+                                <div class="col-md-3">
+                                    <div class="card card-primary m-1">
+                                        <div class="card-body p-0">
+                                            <div class="col-md-12 justify-content-between row m-0">
+
+                                                <ul class="m-1 list-group" style="width:13%;">
+                                                    <li style="list-style: none;text-align:right;margin-left: 15px;">
+                                                        <div class="icheck-primary d-inline">
+                                                            <input type="checkbox" id="check-" @item.empid value=@item.empid name="dcheck" class="selectclass">
+                                                            <label for="check-" @item.empid>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    @*<li style="list-style: none;text-align:right;white-space:nowrap;padding-top:2px;">
+                            <button type="button" class="btn btn-xs btn-info m-0 ">
+                                <i class="fas fa-pencil-alt"></i>
+                            </button>
+                        </li>
+                        <li style="list-style: none;text-align:right;white-space:nowrap;padding-top:2px;">
+                            <button type="button" class="btn m-0 btn-xs btn-danger ">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </li>*@
+                                                </ul>
+                                                <ul class="m-1 list-group" style="width:80%;">
+                                                    <li style="list-style: none;">
+
+                                                    </li>
+                                                    <li style="list-style: none;">
+                                                        <p class="m-0"><b> code: &nbsp;</b> @item.empcode </p>
+                                                    </li>
+                                                    <li style="list-style: none; ">
+                                                        <p class="m-0">
+                                                            <b>Name: &nbsp;</b> @item.FName
+                                                        </p>
+                                                    </li>
+                                                    <li style="list-style: none;">
+                                                        <p class="m-0"><b>card No: &nbsp;</b>@item.cardno</p>
+                                                    </li>
+
+                                                </ul>
+
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                  
+                                 
+                            </div>
+
+                    </div>
+                
+
+                <div class="card-footer">
+                    <nav aria-label="Contacts Page Navigation">
+                       
+                    </nav>
+                </div>

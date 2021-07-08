@@ -1,0 +1,530 @@
+
+        .zinput, .select2-container--default .select2-selection--single {
+            height: calc(4.00rem + 2px) !important;
+           
+        }
+
+        .main-header {
+            border-bottom: 0px;
+        }
+
+        .navbar {
+            border-radius: 0px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            padding-left: 0;
+            height: auto;
+            margin-top: 0px;
+        }
+
+        .bg-white-transparent {
+            background-color: rgba(255, 255, 255, 0.18) !important;
+        }
+
+        .zcontainer-fluid {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .zdropbtn {
+            background-color: rgba(0, 0, 0, 0.32);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .zdropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .zdropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+            .zdropdown-content a {
+                color: black;
+                padding: 5px 10px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .zdropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .zdropdown:hover .zdropdown-content {
+            display: block;
+        }
+
+        .zdropdown:hover .zdropbtn {
+            background-color: #ffc107;
+        }
+
+.hero-image {
+    background: linear-gradient(87deg, rgba(15, 32, 39, 0.5), rgba(44, 83, 100, 0.5) 100%),url(content/css/img/Bulk-Services-compressed.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+}
+        body{
+            overflow-x:hidden;
+        }
+        .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+}
+        .zlable {
+    color: #fff;
+    padding-bottom: 4px;
+    border-radius: 3px;
+}
+        .select2-container{
+            width:100%!important;
+        }
+        .select2-container--open{
+            font-size:16px!important;
+        }
+.navbar-dark {
+    background-color: rgba(4, 12, 19, 0.94);
+}
+      .card-header {
+         background-color: rgba(25, 31, 92, 0.9) !important;
+         }
+        .card{
+             background-color: rgba(255, 255, 255, 0.85)!important;
+        }
+        .card-title{
+            font-size:20px;
+        }
+        table,thead,tr,td,th{
+            border:1px solid #5f5f5f!important;
+            padding:2px!important;
+        }
+        .thead-dark{
+            white-space:nowrap;
+        }
+
+.tab-pane{
+    
+    font-size:16px;
+}
+#top-manu{
+    display:none;
+}
+.zrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+.dropdown-item {
+    border: 1px solid #827a14;
+}
+.zlight {
+    border: 0px;
+    color: rgba(250, 250, 250, 0.5);
+}
+
+.zbold {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 3px solid #17a2b8;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-weight: 700;
+
+}
+.nav-pills > li > a {
+    border-radius:4px 4px 0px 0px ;
+}
+.dropdown-menu {
+    white-space:normal;
+}
+    .dropdown-menu a{
+        margin:5px;
+    }
+
+.footer-top {
+    background: #22262a;
+    padding: 15px 0px 25px;
+}
+.footer-bottom {
+    
+    padding: 10px 0 0;
+}
+
+.zslider{
+    height:300px;
+    width:1000px;
+   
+}
+.xxicons{
+    display:none;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    #top-manu {
+        display: block;
+    }
+    .zrow {
+        display:block;
+      
+    }
+    .zbr{
+        display:none;
+    }
+    .zzicons{
+        display:none;
+    }
+    .xxicons {
+        display:block;
+    }
+}
+
+
+/*login class*/
+
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+
+#formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+    color: #cccccc;
+}
+
+h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+   
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+    input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+        background-color: #39ace7;
+    }
+
+    input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
+        -moz-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+
+input[type=text] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+   
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+    input[type=text]:focus {
+        background-color: #fff;
+        border-bottom: 2px solid #5fbae9;
+    }
+
+   
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+    .fadeIn.first {
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
+    .fadeIn.second {
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+
+    .fadeIn.third {
+        -webkit-animation-delay: 0.8s;
+        -moz-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+    }
+
+    .fadeIn.fourth {
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        animation-delay: 1s;
+    }
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+}
+
+.underlineHover:hover {
+    color: #0d0d0d;
+}
+
+    .underlineHover:hover:after {
+        width: 100%;
+    }
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+}
+
+#icon {
+    width: 60%;
+}
+
+.zheader{
+    color:#fff;
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-top: 0 solid rgba(0,0,0,.125);
+}
+
+.zzcontainer {
+    position: relative;
+    width: 100%;
+
+}
+
+.zzimage {
+    display: inline;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    margin:10px;
+}
+
+.zzoverlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.zzcontainer:hover .zzoverlay {
+    opacity: 1;
+}
+.zcircle{
+    border-radius:50px;
+    height:100px;
+    width:100px;
+   
+}
+.zbackimage {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+a:hover {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+.footer-bottom {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+    white-space:nowrap;
+    overflow:auto;
+}
+.footer-bottom .col-md-6{
+    text-align:center;
+}

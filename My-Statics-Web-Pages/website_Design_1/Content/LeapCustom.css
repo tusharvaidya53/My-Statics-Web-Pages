@@ -1,0 +1,183 @@
+﻿div.ui-datepicker {
+    font-size: 12px;
+}
+.thead-m-dark {
+    background-color: #4f5b63;
+    color:white;
+}
+
+.thead-m-new {
+    background-color: #eceef1;
+    color: black;
+}
+
+.col-5-per {
+    table-layout: fixed;
+    width: 5%;
+}
+
+.col-10-per {
+    table-layout: fixed;
+    width: 10%;
+}
+
+.col-15-per {
+    table-layout: fixed;
+    width: 15%;
+}
+.col-20-per {
+    table-layout: fixed;
+    width: 20%;
+}
+.col-25-per {
+    table-layout: fixed;
+    width: 25%;
+}
+.col-30-per {
+    table-layout: fixed;
+    width: 30%;
+}
+.col-35-per {
+    table-layout: fixed;
+    width: 35%;
+}
+.col-40-per {
+    table-layout: fixed;
+    width: 40%;
+}
+.col-45-per {
+    table-layout: fixed;
+    width: 45%;
+}
+.col-50-per {
+    table-layout: fixed;
+    width: 50%;
+}
+.col-55-per {
+    table-layout: fixed;
+    width: 55%;
+}
+.col-60-per {
+    table-layout: fixed;
+    width: 60%;
+}
+.col-65-per {
+    table-layout: fixed;
+    width: 65%;
+}
+.col-70-per {
+    table-layout: fixed;
+    width: 70%;
+}
+.col-75-per {
+    table-layout: fixed;
+    width: 75%;
+}
+.col-80-per {
+    table-layout: fixed;
+    width: 80%;
+}
+.col-85-per {
+    table-layout: fixed;
+    width: 85%;
+}
+.col-90-per {
+    table-layout: fixed;
+    width: 90%;
+}
+.col-95-per {
+    table-layout: fixed;
+    width: 95%;
+}
+.col-100-per {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.light-blue-background {
+    padding: 1%;
+    background-color: #f6f8ff;
+}
+
+.hero-image {
+    background-image: url(../../img/logo.png);
+    background-repeat: repeat;
+}
+
+.mytextsize  {
+    font-size:13px;
+         }
+
+.h2, h2 {
+    font-size: 1.35rem;
+    padding-bottom: 25px;
+}
+
+.sweet-alert .sa-icon.sa-error .sa-line.sa-left {
+    left: 16px;
+}
+.btn-group-lg > .btn, .btn-lg {
+    padding: 0.1rem 1rem;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #ced4da;
+    min-height: calc(1.25rem + 2px);
+}
+
+
+.t-pad-15 {
+    padding-top:15px;
+}
+.b-pad-15 {
+    padding-bottom: 15px;
+}
+.l-pad-15 {
+    padding-left: 15px;
+}
+.r-pad-15 {
+    padding-right: 15px;
+}
+
+.t-pad-10 {
+    padding-top: 10px;
+}
+.b-pad-10 {
+    padding-bottom: 10px;
+}
+.l-pad-10 {
+    padding-left: 10px;
+}
+.r-pad-10 {
+    padding-right: 10px;
+}
+
+.t-pad-25 {
+    padding-top: 25px;
+}
+.b-pad-25 {
+    padding-bottom: 25px;
+}
+.l-pad-25 {
+    padding-left: 25px;
+}
+.r-pad-25 {
+    padding-right: 25px;
+}
+
+.t-pad-5 {
+    padding-top: 5px;
+}
+.b-pad-5 {
+    padding-bottom: 5px;
+}
+.l-pad-5 {
+    padding-left: 5px;
+}
+.r-pad-5 {
+    padding-right: 5px;
+}
+
+
+
+

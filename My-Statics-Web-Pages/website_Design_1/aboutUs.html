@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>website_1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+ 
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+   
+<body class=" hero-image">
+
+  
+    <div class="zcontainer-fluid ">
+        <!--1.top-nav-->
+        <div class="top-nav sticky-top" style="">
+            <nav class="main-header navbar navbar-expand-md navbar-dark p-0 m-0">
+                <div class="container col-md-12" style="margin-right:1%;margin-left: 1%;">
+                    <header class="blog-header col-md-12">
+                        
+                        <div class="col-md-12 zrow flex-nowrap justify-content-between align-items-center zclass1 " style="white-space:nowrap;">
+                            <div class="col-2 pt-1 ">
+                                <p class="row" style="font-size: 16px;color:#fff;font-family: cursive;margin-bottom: 0rem;white-space:nowrap;">
+
+                                    <img src="content/css/img/smslogo.png" id="icon" alt="User Icon" style="height:30px; width:auto;">logo
+
+                                    <ul class="list-inline xxicons col-md-6" style="font-size:20px;">
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="visit our facebook page"><i class="fab fa-facebook-f" style="color:#2165f3;"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="visit our twitter page"><i class="fab fa-twitter" style="color:#00acee;"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="left" title="visit our google-plus page"><i class="fab fa-google-plus" style="color:#db4a39;"></i></a></li>
+
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-2 pt-1 " id="top-manu">
+
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Manu
+                                    </a>
+                                    
+                                    <div class="dropdown-menu m-2 p-4" aria-labelledby="dropdownMenuLink">
+                                        <a id="" class="btn btn-outline-warning " style="font-size:14px;" href="home.html"> <i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>&nbsp;
+                                        <a id="" class="btn btn-outline-warning active" style="font-size:14px;" href="aboutUs.html"><i class="fas fa-user"></i>&nbsp;&nbsp;About Us</a>&nbsp;
+                                        <a id="" class="btn btn-outline-warning" style="font-size:14px;" href="contactUs.html"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contact Us</a>
+                                        <a id="" class="btn btn-outline-warning" style="font-size:14px;" href="services.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Services</a>&nbsp;
+                                        <a id="" class="btn btn-outline-warning" style="font-size:14px;" href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Login</a>&nbsp;
+                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-8 text-center zclass4">
+                                <div class="collapse navbar-collapse order-3" style="padding-top:10px;">
+                                    <ul class="nav nav-pills">
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class="btn btn-outline-warning zlight" style="font-size:14px;" href="home.html"> <i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>&nbsp;
+                                        </li>
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class="btn btn-outline-warning zbold" style="font-size:14px;" href="aboutUs.html"><i class="fas fa-user"></i>&nbsp;&nbsp;About Us</a>&nbsp;
+                                        </li>
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class="btn btn-outline-warning zlight" style="font-size:14px;" href="contactUs.html"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contact Us</a>&nbsp;
+                                        </li>
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class="btn btn-outline-warning zlight" style="font-size:14px;" href="services.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Services</a>&nbsp;
+                                        </li>
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class="btn btn-outline-warning zlight" style="font-size:14px;" href="login.html"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Login</a>&nbsp;
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex justify-content-end align-items-center zclass2" style="font-size: 16px;color: #fff;">
+                                 <ul class="list-inline zzicons"style="font-size:20px;">
+                                    <li><a href="#" data-toggle="tooltip" data-placement="top" title="visit our facebook page"><i class="fab fa-facebook-f" style="color:#2165f3;"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="visit our twitter page"><i class="fab fa-twitter" style="color:#00acee;"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="left" title="visit our google-plus page"><i class="fab fa-google-plus" style="color:#db4a39;"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </nav>
+        </div>
+        <div class="tab-pane">
+            <div style="padding-bottom:15vh;">
+                <div class="container" style="background-color:rgba(241, 241, 241,0.9);padding-bottom:10px;margin-top:10px;margin-bottom:10px;">
+
+                    <section id="aboutdetail">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="aboutcontent wow animated fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                                        <h1>A few words about us</h1>
+                                        <b> %product name% is powered by %Companyname%</b>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+                                        <!--<p>We are majorly into the following domains:</p>
+                            <ul style="list-style:none;">
+                                <li><a href="#"><i class="fas fa-arrow-circle-right"></i>&nbsp;domain1</a></li>
+                                <li><a href="#"><i class="fas fa-arrow-circle-right"></i>&nbsp;domain2</a></li>
+                            </ul>
+                            <p>tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e. We believe in reliable and consistent service.</p>-->
+                                    </div>
+                                    <div class="aboutbulksms wow animated fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                                        <a href="projects.html" class="btn btn-lg btn-primary"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- /.card-body -->
+                </div>
+            </div>
+           
+            <!--<div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 style="color:#fff;    margin-left: 38px;">Our Services</h1>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ourservices wow animated fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+
+                            <ul>
+                                <li><a href="miss-call-alert.html">Missed Call Alert</a></li>
+                                <li><a href="mvoting.html">mVoting</a></li>
+                                <li><a href="msurvey.html">mSurvey</a></li>
+                                <li><a href="ivr.html">IVR</a></li>
+                                <li><a href="short-code.html">Short Code</a></li>
+                                <li><a href="promotional-bulk-sms.html">Promotional SMS</a></li>
+                                <li><a href="livecall.html">Live-Call Broadcast</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ourservice wow animated fadeInDown animated" style="        visibility: visible;
+    animation-name: fadeInDown;">
+                            <ul>
+                                <li><a href="bulk-voice-call.html">Voice Broadcast</a></li>
+                                <li><a href="avatar.html">AVATAR-Enabled Telecalling</a></li>
+                                <li><a href="ip.html">IP Telephony</a></li>
+                                <li><a href="virtual-receptionist.html">Virtual Receptionist</a></li>
+                                <li><a href="transactional-bulk-sms.html">Transactional SMS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ourservice wow animated fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                            <ul>
+                                <li><a href="long-code.html">Long Code</a></li>
+                                <li><a href="bulk-sms-gateway.html">SMS Gateway</a></li>
+                                <li><a href="voice-calendar.html">Call-Me Calendar</a></li>
+                                <li><a href="voice-conference.html">Conferencing </a></li>
+                                <li><a href="custom-build-solutions.html">Custom-Build Solutions</a></li>
+                                <li><a href="bulk-sms-smpp.html">Bulk SMS SMPP </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ourservices wow animated fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                            <h3 style="color:#fff;    margin-left: 38px;"> Contact Us</h3>
+                            <ul style="color:#fff;list-style:none;">
+                                <li><i class="fa fa-phone"></i> &nbsp;contactName1: 9876543210</li>
+                                <li><i class="fa fa-phone"></i> &nbsp;contactName2: 1234567890</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+            <footer class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="copyright">
+                                <p>Copyright © 2020  <a href="#">tusharvaidya</a> - All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="rating">
+                                <ul class="list-inline" style="color:#fff;list-style:none;">
+                                    <li><i class="fa fa-phone"></i> Contact Us : 00000 </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+       
+
+
+
+
+
+    </div>
+    
+    
+     <!--3.section-product-slider-->
+  
+
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery --><!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script src="plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+
+<script>
+
+    $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+
+        //Datemask dd/mm/yyyy
+        $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+        //Datemask2 mm/dd/yyyy
+        $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+        //Money Euro
+        $('[data-mask]').inputmask()
+
+        //Date range picker
+        $('#reservation').daterangepicker()
+        //Date range picker with time picker
+        $('#reservationtime').daterangepicker({
+            timePicker: true,
+            timePickerIncrement: 30,
+            locale: {
+                format: 'MM/DD/YYYY hh:mm A'
+            }
+        })
+        //Date range as a button
+        $('#daterange-btn').daterangepicker(
+            {
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                startDate: moment().subtract(29, 'days'),
+                endDate: moment()
+            },
+            function (start, end) {
+                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+            }
+        )
+
+        //Timepicker
+        $('#timepicker').datetimepicker({
+            format: 'LT'
+        })
+
+        //Bootstrap Duallistbox
+        $('.duallistbox').bootstrapDualListbox()
+
+        //Colorpicker
+        $('.my-colorpicker1').colorpicker()
+        //color picker with addon
+        $('.my-colorpicker2').colorpicker()
+
+        $('.my-colorpicker2').on('colorpickerChange', function (event) {
+            $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+        });
+
+        $("input[data-bootstrap-switch]").each(function () {
+            $(this).bootstrapSwitch('state', $(this).prop('checked'));
+        });
+
+    })
+</script>
+
+</body>
+</html>

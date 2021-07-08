@@ -1,0 +1,161 @@
+﻿
+/*tree*/
+
+
+#pen-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+}
+
+.tree-view {
+    align-self: center;
+    background: #fff;
+    margin: auto;
+}
+
+    .tree-view .checkbox {
+        padding: 5px;
+        /*margin: 0px 0px 0px -25px;*/
+    }
+
+.check1 {
+    margin-left: -10px;
+}
+
+span3 {
+    margin-left: 20px;
+}
+
+.tree-view ul {
+    margin: 0 0 0 5px;
+    padding: 0 0 0 15px;
+    list-style: none;
+}
+
+.tree-view .root {
+    padding-left: 0px;
+}
+
+.tree-view .is-folder ul {
+    border-left: 1px dotted #ddd;
+}
+
+.tree-view .checkbox input {
+    display: none;
+}
+
+    .tree-view .checkbox input + label {
+        position: relative;
+        display: block;
+    }
+
+        .tree-view .checkbox input + label:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 3px;
+            margin-top: -7px;
+            border: 2px solid #aaa;
+            height: 14px;
+            width: 14px;
+        }
+
+    .tree-view .checkbox input:checked + label:before {
+        border-color: #446cb3;
+    }
+
+    .tree-view .checkbox input:checked + label:after {
+        content: "\f00c";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        margin-top: -6px;
+        height: 12px;
+        width: 12px;
+        font: normal normal normal 12px/1 FontAwesome;
+        color: #446cb3;
+    }
+
+.tree-view .checkbox.partial-check > input + label:before,
+.tree-view .checkbox.partial-check > input:checked + label:before {
+    box-shadow: inset 0 0 0 2px #fff;
+    background: #aaa;
+}
+
+.tree-view .checkbox.partial-check > input + label:after {
+    display: none;
+}
+
+
+.is-folder > .checkbox {
+    position: relative;
+    padding-left: 15px;
+    border-color: #ddd;
+    font-weight: bold;
+}
+
+    .is-folder > .checkbox > a.folder-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        width: 0;
+        height: 0;
+        margin-top: -3px;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 6px solid #666;
+    }
+
+.is-folder.open > .checkbox > a.folder-toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 0;
+    height: 0;
+    margin-top: -4px;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #666;
+    border-left: 4px solid transparent;
+}
+
+.is-folder > ul {
+    display: none;
+}
+
+.is-folder.open > ul {
+    display: block;
+}
+
+.Setup {
+    height: 30px;
+    background-color: rgba(215,222,227,1);
+    width: 100%;
+    text-align: center;
+}
+
+.rightside {
+    background-color: #ecf0f5;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+#myModal2 {
+    margin-top: 200px;
+}
+
+
+

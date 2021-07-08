@@ -1,0 +1,2756 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/*body {
+	background-color: #eee;
+	background-image: url(../images/patterns/light_toast.png);
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+}*/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0099cc;
+    }
+
+ol, ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrap {
+    margin: 0 auto;
+}
+
+.inner {
+    margin: 30px;
+    /*max-width: 940px;*/
+    max-width: 1019px;
+    padding: 0 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    margin-top: 55px;
+}
+
+/* HEADER */
+/*#wrap > header {
+	background-color:#212121;
+	padding-bottom: 20px;
+}*/
+
+.logo {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 15px;
+    margin-left: -150px;
+}
+
+#navigation {
+    position: absolute;
+    /*right: 40px;*/
+    margin-top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+    float: right;
+}
+
+/* HEADER > MENU */
+#main-menu {
+    /*float: right;*/
+    font-size: 0;
+    margin: 0px 95px;
+}
+
+    #main-menu > li {
+        display: inline-block;
+        margin-left: 0px;
+        padding: 2px 0;
+        padding: 5px;
+    }
+
+
+    #main-menu li:first-child {
+        border: none;
+    }
+
+    #main-menu > li.parent i {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    #main-menu > li.parent > a {
+        padding-left: 14px;
+    }
+
+    #main-menu > li > a {
+        color: #eee;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 30px 0;
+        text-decoration: none;
+    }
+
+    #main-menu > li:hover > a,
+    #main-menu > li.current-menu-item > a {
+        /*color: #23dbdb;*/
+        color: #00b6ff;
+    }
+
+    /* HEADER > MENU > DROPDOWN */
+    #main-menu li {
+        position: relative;
+        margin-top: -4px;
+    }
+
+ul.sub-menu { /* level 2 */
+    display: none;
+    left: 0px;
+    top: 19px;
+    padding-top: 10px;
+    position: absolute;
+    width: 150px;
+    z-index: 9999;
+}
+
+    ul.sub-menu ul.sub-menu { /* level 3+ */
+        margin-top: -1px;
+        padding-top: 0;
+        left: 149px;
+        top: 0px;
+    }
+
+    ul.sub-menu > li > a {
+        background-color: #333;
+        border: 1px solid #444;
+        border-top: none;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 12px;
+    }
+
+        ul.sub-menu > li > a:hover {
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+    ul.sub-menu > li:first-child {
+        border-top: 3px solid #0099cc;
+    }
+
+    ul.sub-menu ul.sub-menu > li:first-child {
+        border-top: 1px solid #444;
+    }
+
+    ul.sub-menu > li:last-child > a {
+        border-radius: 0 0 2px 2px;
+    }
+
+    ul.sub-menu > li > a.parent {
+        background-image: url(../../img/arrow.png);
+        background-size: 5px 9px;
+        background-repeat: no-repeat;
+        background-position: 95% center;
+    }
+
+#main-menu li:hover > ul.sub-menu {
+    display: block; /* show the submenu */
+}
+
+@media all and (max-width: 700px) {
+
+    #navigation {
+        position: static;
+        margin-top: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-menu {
+        display: none;
+        float: none;
+    }
+
+        #main-menu li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-menu > li {
+            margin-top: -1px;
+        }
+
+            #main-menu > li:first-child {
+                margin-top: 0;
+            }
+
+            #main-menu > li > a {
+                background-color: #333;
+                border: 1px solid #444;
+                color: #bbb;
+                display: block;
+                font-size: 14px;
+                padding: 12px !important;
+                padding: 0;
+            }
+
+        #main-menu li > a:hover {
+            background-color: #444;
+        }
+
+        #main-menu > li.parent {
+            background: none !important;
+            padding: 0;
+        }
+
+        #main-menu > li:hover > a,
+        #main-menu > li.current-menu-item > a {
+            border: 1px solid #444 !important;
+            color: #fff !important;
+        }
+
+    ul.sub-menu {
+        display: block;
+        margin-top: -1px;
+        margin-left: 20px;
+        position: static;
+        padding: 0;
+        width: inherit;
+    }
+
+        ul.sub-menu > li:first-child {
+            border-top: 1px solid #444 !important;
+        }
+
+        ul.sub-menu > li > a.parent {
+            background: #333 !important;
+        }
+}
+
+/*new add*/
+
+#first {
+    margin-right: -160px;
+}
+
+    #first ul li {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    #first ul {
+        display: inline-block;
+        margin-top: -71px;
+    }
+
+        #first ul li a {
+            color: #fff;
+        }
+
+#background {
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.view {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: #212121;
+    width: 100%;
+    height: 50px;
+    margin-top: 605px;
+    color: #fff;
+}
+
+.copy {
+    margin-top: 10px;
+}
+
+
+.breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+    margin-left: 41%;
+    margin-top: 28px;
+}
+
+    .breadcrumb a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 36px;
+        color: white;
+        /*need more margin on the left of links to accomodate the numbers*/
+        padding: 0 10px 0 60px;
+        background: #666;
+        background: linear-gradient(#666, #333);
+        position: relative;
+    }
+        /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+        .breadcrumb a:first-child {
+            padding-left: 46px;
+            border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+        }
+
+            .breadcrumb a:first-child:before {
+                left: 14px;
+            }
+
+        .breadcrumb a:last-child {
+            border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+            padding-right: 20px;
+        }
+
+        /*hover/active styles*/
+        .breadcrumb a.active, .breadcrumb a:hover {
+            background: #333;
+            background: linear-gradient(#333, #000);
+        }
+
+            .breadcrumb a.active:after, .breadcrumb a:hover:after {
+                background: #333;
+                background: linear-gradient(135deg, #333, #000);
+            }
+
+        /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+        .breadcrumb a:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -18px; /*half of square's length*/
+            /*same dimension as the line-height of .breadcrumb a */
+            width: 36px;
+            height: 36px;
+            /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+            transform: scale(0.707) rotate(45deg);
+            /*we need to prevent the arrows from getting buried under the next link*/
+            z-index: 1;
+            /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+            background: #666;
+            background: linear-gradient(135deg, #666, #333);
+            /*stylish arrow design using box shadow*/
+            box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+            /*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+            border-radius: 0 5px 0 50px;
+        }
+        /*we dont need an arrow after the last link*/
+        .breadcrumb a:last-child:after {
+            content: none;
+        }
+/*we will use the :before element to show numbers*/
+
+
+.flat a, .flat a:after {
+    background: white;
+    color: black;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+    .flat a:before {
+        background: white;
+        box-shadow: 0 0 0 1px #ccc;
+    }
+
+    .flat a:hover, .flat a.active,
+    .flat a:hover:after, .flat a.active:after {
+        background: #0099cc;
+        color: #fff;
+    }
+
+.report {
+    margin-left: 47%;
+    margin-top: 125px;
+    font-size: 20px;
+}
+
+
+.ibox-content {
+    height: 533px;
+    border: 1px solid #E0E0E0;
+    border-image: none;
+    width: 90%;
+    margin-left: 69px;
+}
+
+
+
+.export {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.check {
+    margin-top: 30px;
+}
+
+.count {
+    margin-left: 280px;
+}
+
+.change {
+    color: #616161;
+}
+
+.topper {
+    height: 70px;
+    /*background-color: #364f6b;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+    background: rgb(179,220,237); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.head2 {
+    height: 30px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    ;
+    border-radius: 21px;
+    /*background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );*/
+}
+
+body {
+    background: #000;
+    padding-top: 10px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+}
+
+
+    p a {
+        color: lime;
+        text-decoration: none;
+    }
+
+p {
+    margin: 18px 106px 10px;
+}
+
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+
+
+.Access1 ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+    .Access1 ul li a {
+        color: #fff;
+    }
+
+.Access1 ul {
+    margin-top: 6px;
+}
+
+/*.mainnav li {
+    float: left;
+    padding: 5px;
+    background: maroon;
+    border-left: 1px dotted #fff;
+}*/
+
+.dropdown-menu.pull-right {
+    right: 0px;
+    left: auto;
+}
+
+
+
+
+/**/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/*body {
+	background-color: #eee;
+	background-image: url(../images/patterns/light_toast.png);
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+}*/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0099cc;
+    }
+
+ol, ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrap {
+    margin: 0 auto;
+}
+
+.inner {
+    margin: 30px;
+    /*max-width: 940px;*/
+    max-width: 1019px;
+    padding: 0 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    margin-top: 55px;
+}
+
+/* HEADER */
+/*#wrap > header {
+	background-color:#212121;
+	padding-bottom: 20px;
+}*/
+
+.logo {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 15px;
+    margin-left: -150px;
+}
+
+#navigation {
+    position: absolute;
+    /*right: 40px;*/
+    margin-top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+    float: right;
+}
+
+/* HEADER > MENU */
+#main-menu {
+    /*float: right;*/
+    font-size: 0;
+    margin: 0px 95px;
+}
+
+    #main-menu > li {
+        display: inline-block;
+        margin-left: 0px;
+        padding: 2px 0;
+        padding: 5px;
+    }
+
+
+    #main-menu li:first-child {
+        border: none;
+    }
+
+    #main-menu > li.parent i {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    #main-menu > li.parent > a {
+        padding-left: 14px;
+    }
+
+    #main-menu > li > a {
+        color: #eee;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 30px 0;
+        text-decoration: none;
+    }
+
+    #main-menu > li:hover > a,
+    #main-menu > li.current-menu-item > a {
+        /*color: #23dbdb;*/
+        color: #00b6ff;
+    }
+
+    /* HEADER > MENU > DROPDOWN */
+    #main-menu li {
+        position: relative;
+        margin-top: -4px;
+    }
+
+ul.sub-menu { /* level 2 */
+    display: none;
+    left: 0px;
+    top: 19px;
+    padding-top: 10px;
+    position: absolute;
+    width: 150px;
+    z-index: 9999;
+}
+
+    ul.sub-menu ul.sub-menu { /* level 3+ */
+        margin-top: -1px;
+        padding-top: 0;
+        left: 149px;
+        top: 0px;
+    }
+
+    ul.sub-menu > li > a {
+        background-color: #333;
+        border: 1px solid #444;
+        border-top: none;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 12px;
+    }
+
+        ul.sub-menu > li > a:hover {
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+    ul.sub-menu > li:first-child {
+        border-top: 3px solid #0099cc;
+    }
+
+    ul.sub-menu ul.sub-menu > li:first-child {
+        border-top: 1px solid #444;
+    }
+
+    ul.sub-menu > li:last-child > a {
+        border-radius: 0 0 2px 2px;
+    }
+
+    ul.sub-menu > li > a.parent {
+        background-image: url(../../img/arrow.png);
+        background-size: 5px 9px;
+        background-repeat: no-repeat;
+        background-position: 95% center;
+    }
+
+#main-menu li:hover > ul.sub-menu {
+    display: block; /* show the submenu */
+}
+
+@media all and (max-width: 700px) {
+
+    #navigation {
+        position: static;
+        margin-top: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-menu {
+        display: none;
+        float: none;
+    }
+
+        #main-menu li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-menu > li {
+            margin-top: -1px;
+        }
+
+            #main-menu > li:first-child {
+                margin-top: 0;
+            }
+
+            #main-menu > li > a {
+                background-color: #333;
+                border: 1px solid #444;
+                color: #bbb;
+                display: block;
+                font-size: 14px;
+                padding: 12px !important;
+                padding: 0;
+            }
+
+        #main-menu li > a:hover {
+            background-color: #444;
+        }
+
+        #main-menu > li.parent {
+            background: none !important;
+            padding: 0;
+        }
+
+        #main-menu > li:hover > a,
+        #main-menu > li.current-menu-item > a {
+            border: 1px solid #444 !important;
+            color: #fff !important;
+        }
+
+    ul.sub-menu {
+        display: block;
+        margin-top: -1px;
+        margin-left: 20px;
+        position: static;
+        padding: 0;
+        width: inherit;
+    }
+
+        ul.sub-menu > li:first-child {
+            border-top: 1px solid #444 !important;
+        }
+
+        ul.sub-menu > li > a.parent {
+            background: #333 !important;
+        }
+}
+
+/*new add*/
+
+#first {
+    margin-right: -160px;
+}
+
+    #first ul li {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    #first ul {
+        display: inline-block;
+        margin-top: -71px;
+    }
+
+        #first ul li a {
+            color: #fff;
+        }
+
+#background {
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.view {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: #212121;
+    width: 100%;
+    height: 50px;
+    margin-top: 605px;
+    color: #fff;
+}
+
+.copy {
+    margin-top: 10px;
+}
+
+
+.breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+    margin-left: 41%;
+    margin-top: 28px;
+}
+
+    .breadcrumb a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 36px;
+        color: white;
+        /*need more margin on the left of links to accomodate the numbers*/
+        padding: 0 10px 0 60px;
+        background: #666;
+        background: linear-gradient(#666, #333);
+        position: relative;
+    }
+        /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+        .breadcrumb a:first-child {
+            padding-left: 46px;
+            border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+        }
+
+            .breadcrumb a:first-child:before {
+                left: 14px;
+            }
+
+        .breadcrumb a:last-child {
+            border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+            padding-right: 20px;
+        }
+
+        /*hover/active styles*/
+        .breadcrumb a.active, .breadcrumb a:hover {
+            background: #333;
+            background: linear-gradient(#333, #000);
+        }
+
+            .breadcrumb a.active:after, .breadcrumb a:hover:after {
+                background: #333;
+                background: linear-gradient(135deg, #333, #000);
+            }
+
+        /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+        .breadcrumb a:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -18px; /*half of square's length*/
+            /*same dimension as the line-height of .breadcrumb a */
+            width: 36px;
+            height: 36px;
+            /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+            transform: scale(0.707) rotate(45deg);
+            /*we need to prevent the arrows from getting buried under the next link*/
+            z-index: 1;
+            /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+            background: #666;
+            background: linear-gradient(135deg, #666, #333);
+            /*stylish arrow design using box shadow*/
+            box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+            /*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+            border-radius: 0 5px 0 50px;
+        }
+        /*we dont need an arrow after the last link*/
+        .breadcrumb a:last-child:after {
+            content: none;
+        }
+/*we will use the :before element to show numbers*/
+
+
+.flat a, .flat a:after {
+    background: white;
+    color: black;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+    .flat a:before {
+        background: white;
+        box-shadow: 0 0 0 1px #ccc;
+    }
+
+    .flat a:hover, .flat a.active,
+    .flat a:hover:after, .flat a.active:after {
+        background: #0099cc;
+        color: #fff;
+    }
+
+.report {
+    margin-left: 47%;
+    margin-top: 125px;
+    font-size: 20px;
+}
+
+
+.ibox-content {
+    height: 533px;
+    border: 1px solid #E0E0E0;
+    border-image: none;
+    width: 90%;
+    margin-left: 69px;
+}
+
+
+
+.export {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.check {
+    margin-top: 30px;
+}
+
+.count {
+    margin-left: 280px;
+}
+
+.change {
+    color: #616161;
+}
+
+.topper {
+    height: 70px;
+    /*background-color: #364f6b;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+    background: rgb(179,220,237); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.head2 {
+    height: 30px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    ;
+    border-radius: 21px;
+    /*background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );*/
+}
+
+body {
+    background: #000;
+    padding-top: 10px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+}
+
+
+    p a {
+        color: lime;
+        text-decoration: none;
+    }
+
+p {
+    margin: 18px 106px 10px;
+}
+
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+
+
+.Access1 ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+    .Access1 ul li a {
+        color: #fff;
+    }
+
+.Access1 ul {
+    margin-top: 6px;
+}
+
+/*.mainnav li {
+    float: left;
+    padding: 5px;
+    background: maroon;
+    border-left: 1px dotted #fff;
+}*/
+
+.dropdown-menu.pull-right {
+    right: 0px;
+    left: auto;
+}
+
+
+
+
+/**/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/*body {
+	background-color: #eee;
+	background-image: url(../images/patterns/light_toast.png);
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+}*/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0099cc;
+    }
+
+ol, ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrap {
+    margin: 0 auto;
+}
+
+.inner {
+    margin: 30px;
+    /*max-width: 940px;*/
+    max-width: 1019px;
+    padding: 0 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    margin-top: 55px;
+}
+
+/* HEADER */
+/*#wrap > header {
+	background-color:#212121;
+	padding-bottom: 20px;
+}*/
+
+.logo {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 15px;
+    margin-left: -150px;
+}
+
+#navigation {
+    position: absolute;
+    /*right: 40px;*/
+    margin-top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+    float: right;
+}
+
+/* HEADER > MENU */
+#main-menu {
+    /*float: right;*/
+    font-size: 0;
+    margin: 0px 95px;
+}
+
+    #main-menu > li {
+        display: inline-block;
+        margin-left: 0px;
+        padding: 2px 0;
+        padding: 5px;
+    }
+
+
+    #main-menu li:first-child {
+        border: none;
+    }
+
+    #main-menu > li.parent i {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    #main-menu > li.parent > a {
+        padding-left: 14px;
+    }
+
+    #main-menu > li > a {
+        color: #eee;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 30px 0;
+        text-decoration: none;
+    }
+
+    #main-menu > li:hover > a,
+    #main-menu > li.current-menu-item > a {
+        /*color: #23dbdb;*/
+        color: #00b6ff;
+    }
+
+    /* HEADER > MENU > DROPDOWN */
+    #main-menu li {
+        position: relative;
+        margin-top: -4px;
+    }
+
+ul.sub-menu { /* level 2 */
+    display: none;
+    left: 0px;
+    top: 19px;
+    padding-top: 10px;
+    position: absolute;
+    width: 150px;
+    z-index: 9999;
+}
+
+    ul.sub-menu ul.sub-menu { /* level 3+ */
+        margin-top: -1px;
+        padding-top: 0;
+        left: 149px;
+        top: 0px;
+    }
+
+    ul.sub-menu > li > a {
+        background-color: #333;
+        border: 1px solid #444;
+        border-top: none;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 12px;
+    }
+
+        ul.sub-menu > li > a:hover {
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+    ul.sub-menu > li:first-child {
+        border-top: 3px solid #0099cc;
+    }
+
+    ul.sub-menu ul.sub-menu > li:first-child {
+        border-top: 1px solid #444;
+    }
+
+    ul.sub-menu > li:last-child > a {
+        border-radius: 0 0 2px 2px;
+    }
+
+    ul.sub-menu > li > a.parent {
+        background-image: url(../../img/arrow.png);
+        background-size: 5px 9px;
+        background-repeat: no-repeat;
+        background-position: 95% center;
+    }
+
+#main-menu li:hover > ul.sub-menu {
+    display: block; /* show the submenu */
+}
+
+@media all and (max-width: 700px) {
+
+    #navigation {
+        position: static;
+        margin-top: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-menu {
+        display: none;
+        float: none;
+    }
+
+        #main-menu li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-menu > li {
+            margin-top: -1px;
+        }
+
+            #main-menu > li:first-child {
+                margin-top: 0;
+            }
+
+            #main-menu > li > a {
+                background-color: #333;
+                border: 1px solid #444;
+                color: #bbb;
+                display: block;
+                font-size: 14px;
+                padding: 12px !important;
+                padding: 0;
+            }
+
+        #main-menu li > a:hover {
+            background-color: #444;
+        }
+
+        #main-menu > li.parent {
+            background: none !important;
+            padding: 0;
+        }
+
+        #main-menu > li:hover > a,
+        #main-menu > li.current-menu-item > a {
+            border: 1px solid #444 !important;
+            color: #fff !important;
+        }
+
+    ul.sub-menu {
+        display: block;
+        margin-top: -1px;
+        margin-left: 20px;
+        position: static;
+        padding: 0;
+        width: inherit;
+    }
+
+        ul.sub-menu > li:first-child {
+            border-top: 1px solid #444 !important;
+        }
+
+        ul.sub-menu > li > a.parent {
+            background: #333 !important;
+        }
+}
+
+/*new add*/
+
+#first {
+    margin-right: -160px;
+}
+
+    #first ul li {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    #first ul {
+        display: inline-block;
+        margin-top: -71px;
+    }
+
+        #first ul li a {
+            color: #fff;
+        }
+
+#background {
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.view {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: #212121;
+    width: 100%;
+    height: 50px;
+    margin-top: 605px;
+    color: #fff;
+}
+
+.copy {
+    margin-top: 10px;
+}
+
+
+.breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+    margin-left: 41%;
+    margin-top: 28px;
+}
+
+    .breadcrumb a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 36px;
+        color: white;
+        /*need more margin on the left of links to accomodate the numbers*/
+        padding: 0 10px 0 60px;
+        background: #666;
+        background: linear-gradient(#666, #333);
+        position: relative;
+    }
+        /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+        .breadcrumb a:first-child {
+            padding-left: 46px;
+            border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+        }
+
+            .breadcrumb a:first-child:before {
+                left: 14px;
+            }
+
+        .breadcrumb a:last-child {
+            border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+            padding-right: 20px;
+        }
+
+        /*hover/active styles*/
+        .breadcrumb a.active, .breadcrumb a:hover {
+            background: #333;
+            background: linear-gradient(#333, #000);
+        }
+
+            .breadcrumb a.active:after, .breadcrumb a:hover:after {
+                background: #333;
+                background: linear-gradient(135deg, #333, #000);
+            }
+
+        /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+        .breadcrumb a:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -18px; /*half of square's length*/
+            /*same dimension as the line-height of .breadcrumb a */
+            width: 36px;
+            height: 36px;
+            /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+            transform: scale(0.707) rotate(45deg);
+            /*we need to prevent the arrows from getting buried under the next link*/
+            z-index: 1;
+            /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+            background: #666;
+            background: linear-gradient(135deg, #666, #333);
+            /*stylish arrow design using box shadow*/
+            box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+            /*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+            border-radius: 0 5px 0 50px;
+        }
+        /*we dont need an arrow after the last link*/
+        .breadcrumb a:last-child:after {
+            content: none;
+        }
+/*we will use the :before element to show numbers*/
+
+
+.flat a, .flat a:after {
+    background: white;
+    color: black;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+    .flat a:before {
+        background: white;
+        box-shadow: 0 0 0 1px #ccc;
+    }
+
+    .flat a:hover, .flat a.active,
+    .flat a:hover:after, .flat a.active:after {
+        background: #0099cc;
+        color: #fff;
+    }
+
+.report {
+    margin-left: 47%;
+    margin-top: 125px;
+    font-size: 20px;
+}
+
+
+.ibox-content {
+    height: 533px;
+    border: 1px solid #E0E0E0;
+    border-image: none;
+    width: 90%;
+    margin-left: 69px;
+}
+
+
+
+.export {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.check {
+    margin-top: 30px;
+}
+
+.count {
+    margin-left: 280px;
+}
+
+.change {
+    color: #616161;
+}
+
+.topper {
+    height: 70px;
+    /*background-color: #364f6b;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+    background: rgb(179,220,237); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.head2 {
+    height: 30px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    ;
+    border-radius: 21px;
+    /*background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );*/
+}
+
+body {
+    background: #000;
+    padding-top: 10px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+}
+
+
+    p a {
+        color: lime;
+        text-decoration: none;
+    }
+
+p {
+    margin: 18px 106px 10px;
+}
+
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+
+
+.Access1 ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+    .Access1 ul li a {
+        color: #fff;
+    }
+
+.Access1 ul {
+    margin-top: 6px;
+}
+
+/*.mainnav li {
+    float: left;
+    padding: 5px;
+    background: maroon;
+    border-left: 1px dotted #fff;
+}*/
+
+.dropdown-menu.pull-right {
+    right: 0px;
+    left: auto;
+}
+
+
+
+
+/**/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/*body {
+	background-color: #eee;
+	background-image: url(../images/patterns/light_toast.png);
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+}*/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0099cc;
+    }
+
+ol, ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrap {
+    margin: 0 auto;
+}
+
+.inner {
+    margin: 30px;
+    /*max-width: 940px;*/
+    max-width: 1019px;
+    padding: 0 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    margin-top: 55px;
+}
+
+/* HEADER */
+/*#wrap > header {
+	background-color:#212121;
+	padding-bottom: 20px;
+}*/
+
+.logo {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 15px;
+    margin-left: -150px;
+}
+
+#navigation {
+    position: absolute;
+    /*right: 40px;*/
+    margin-top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+    float: right;
+}
+
+/* HEADER > MENU */
+#main-menu {
+    /*float: right;*/
+    font-size: 0;
+    margin: 0px 95px;
+}
+
+    #main-menu > li {
+        display: inline-block;
+        margin-left: 0px;
+        padding: 2px 0;
+        padding: 5px;
+    }
+
+
+    #main-menu li:first-child {
+        border: none;
+    }
+
+    #main-menu > li.parent i {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    #main-menu > li.parent > a {
+        padding-left: 14px;
+    }
+
+    #main-menu > li > a {
+        color: #eee;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 30px 0;
+        text-decoration: none;
+    }
+
+    #main-menu > li:hover > a,
+    #main-menu > li.current-menu-item > a {
+        /*color: #23dbdb;*/
+        color: #00b6ff;
+    }
+
+    /* HEADER > MENU > DROPDOWN */
+    #main-menu li {
+        position: relative;
+        margin-top: -4px;
+    }
+
+ul.sub-menu { /* level 2 */
+    display: none;
+    left: 0px;
+    top: 19px;
+    padding-top: 10px;
+    position: absolute;
+    width: 150px;
+    z-index: 9999;
+}
+
+    ul.sub-menu ul.sub-menu { /* level 3+ */
+        margin-top: -1px;
+        padding-top: 0;
+        left: 149px;
+        top: 0px;
+    }
+
+    ul.sub-menu > li > a {
+        background-color: #333;
+        border: 1px solid #444;
+        border-top: none;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 12px;
+    }
+
+        ul.sub-menu > li > a:hover {
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+    ul.sub-menu > li:first-child {
+        border-top: 3px solid #0099cc;
+    }
+
+    ul.sub-menu ul.sub-menu > li:first-child {
+        border-top: 1px solid #444;
+    }
+
+    ul.sub-menu > li:last-child > a {
+        border-radius: 0 0 2px 2px;
+    }
+
+    ul.sub-menu > li > a.parent {
+        background-image: url(../../img/arrow.png);
+        background-size: 5px 9px;
+        background-repeat: no-repeat;
+        background-position: 95% center;
+    }
+
+#main-menu li:hover > ul.sub-menu {
+    display: block; /* show the submenu */
+}
+
+@media all and (max-width: 700px) {
+
+    #navigation {
+        position: static;
+        margin-top: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-menu {
+        display: none;
+        float: none;
+    }
+
+        #main-menu li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-menu > li {
+            margin-top: -1px;
+        }
+
+            #main-menu > li:first-child {
+                margin-top: 0;
+            }
+
+            #main-menu > li > a {
+                background-color: #333;
+                border: 1px solid #444;
+                color: #bbb;
+                display: block;
+                font-size: 14px;
+                padding: 12px !important;
+                padding: 0;
+            }
+
+        #main-menu li > a:hover {
+            background-color: #444;
+        }
+
+        #main-menu > li.parent {
+            background: none !important;
+            padding: 0;
+        }
+
+        #main-menu > li:hover > a,
+        #main-menu > li.current-menu-item > a {
+            border: 1px solid #444 !important;
+            color: #fff !important;
+        }
+
+    ul.sub-menu {
+        display: block;
+        margin-top: -1px;
+        margin-left: 20px;
+        position: static;
+        padding: 0;
+        width: inherit;
+    }
+
+        ul.sub-menu > li:first-child {
+            border-top: 1px solid #444 !important;
+        }
+
+        ul.sub-menu > li > a.parent {
+            background: #333 !important;
+        }
+}
+
+/*new add*/
+
+#first {
+    margin-right: -160px;
+}
+
+    #first ul li {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    #first ul {
+        display: inline-block;
+        margin-top: -71px;
+    }
+
+        #first ul li a {
+            color: #fff;
+        }
+
+#background {
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.view {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: #212121;
+    width: 100%;
+    height: 50px;
+    margin-top: 605px;
+    color: #fff;
+}
+
+.copy {
+    margin-top: 10px;
+}
+
+
+.breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+    margin-left: 41%;
+    margin-top: 28px;
+}
+
+    .breadcrumb a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 36px;
+        color: white;
+        /*need more margin on the left of links to accomodate the numbers*/
+        padding: 0 10px 0 60px;
+        background: #666;
+        background: linear-gradient(#666, #333);
+        position: relative;
+    }
+        /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+        .breadcrumb a:first-child {
+            padding-left: 46px;
+            border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+        }
+
+            .breadcrumb a:first-child:before {
+                left: 14px;
+            }
+
+        .breadcrumb a:last-child {
+            border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+            padding-right: 20px;
+        }
+
+        /*hover/active styles*/
+        .breadcrumb a.active, .breadcrumb a:hover {
+            background: #333;
+            background: linear-gradient(#333, #000);
+        }
+
+            .breadcrumb a.active:after, .breadcrumb a:hover:after {
+                background: #333;
+                background: linear-gradient(135deg, #333, #000);
+            }
+
+        /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+        .breadcrumb a:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -18px; /*half of square's length*/
+            /*same dimension as the line-height of .breadcrumb a */
+            width: 36px;
+            height: 36px;
+            /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+            transform: scale(0.707) rotate(45deg);
+            /*we need to prevent the arrows from getting buried under the next link*/
+            z-index: 1;
+            /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+            background: #666;
+            background: linear-gradient(135deg, #666, #333);
+            /*stylish arrow design using box shadow*/
+            box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+            /*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+            border-radius: 0 5px 0 50px;
+        }
+        /*we dont need an arrow after the last link*/
+        .breadcrumb a:last-child:after {
+            content: none;
+        }
+/*we will use the :before element to show numbers*/
+
+
+.flat a, .flat a:after {
+    background: white;
+    color: black;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+    .flat a:before {
+        background: white;
+        box-shadow: 0 0 0 1px #ccc;
+    }
+
+    .flat a:hover, .flat a.active,
+    .flat a:hover:after, .flat a.active:after {
+        background: #0099cc;
+        color: #fff;
+    }
+
+.report {
+    margin-left: 47%;
+    margin-top: 125px;
+    font-size: 20px;
+}
+
+
+.ibox-content {
+    height: 533px;
+    border: 1px solid #E0E0E0;
+    border-image: none;
+    width: 90%;
+    margin-left: 69px;
+}
+
+
+
+.export {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.check {
+    margin-top: 30px;
+}
+
+.count {
+    margin-left: 280px;
+}
+
+.change {
+    color: #616161;
+}
+
+.topper {
+    height: 70px;
+    /*background-color: #364f6b;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+    background: rgb(179,220,237); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.head2 {
+    height: 30px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    ;
+    border-radius: 21px;
+    /*background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );*/
+}
+
+body {
+    background: #000;
+    padding-top: 10px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+}
+
+
+    p a {
+        color: lime;
+        text-decoration: none;
+    }
+
+p {
+    margin: 18px 106px 10px;
+}
+
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+
+
+.Access1 ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+    .Access1 ul li a {
+        color: #fff;
+    }
+
+.Access1 ul {
+    margin-top: 6px;
+}
+
+/*.mainnav li {
+    float: left;
+    padding: 5px;
+    background: maroon;
+    border-left: 1px dotted #fff;
+}*/
+
+.dropdown-menu.pull-right {
+    right: 0px;
+    left: auto;
+}
+
+
+
+
+/**/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/*body {
+	background-color: #eee;
+	background-image: url(../images/patterns/light_toast.png);
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+}*/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0099cc;
+    }
+
+ol, ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrap {
+    margin: 0 auto;
+}
+
+.inner {
+    margin: 30px;
+    /*max-width: 940px;*/
+    max-width: 1019px;
+    padding: 0 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    margin-top: 55px;
+}
+
+/* HEADER */
+/*#wrap > header {
+	background-color:#212121;
+	padding-bottom: 20px;
+}*/
+
+.logo {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 15px;
+    margin-left: -150px;
+}
+
+#navigation {
+    position: absolute;
+    /*right: 40px;*/
+    margin-top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+    float: right;
+}
+
+/* HEADER > MENU */
+#main-menu {
+    /*float: right;*/
+    font-size: 0;
+    margin: 0px 95px;
+}
+
+    #main-menu > li {
+        display: inline-block;
+        margin-left: 0px;
+        padding: 2px 0;
+        padding: 5px;
+    }
+
+
+    #main-menu li:first-child {
+        border: none;
+    }
+
+    #main-menu > li.parent i {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    #main-menu > li.parent > a {
+        padding-left: 14px;
+    }
+
+    #main-menu > li > a {
+        color: #eee;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 30px 0;
+        text-decoration: none;
+    }
+
+    #main-menu > li:hover > a,
+    #main-menu > li.current-menu-item > a {
+        /*color: #23dbdb;*/
+        color: #00b6ff;
+    }
+
+    /* HEADER > MENU > DROPDOWN */
+    #main-menu li {
+        position: relative;
+        margin-top: -4px;
+    }
+
+ul.sub-menu { /* level 2 */
+    display: none;
+    left: 0px;
+    top: 19px;
+    padding-top: 10px;
+    position: absolute;
+    width: 150px;
+    z-index: 9999;
+}
+
+    ul.sub-menu ul.sub-menu { /* level 3+ */
+        margin-top: -1px;
+        padding-top: 0;
+        left: 149px;
+        top: 0px;
+    }
+
+    ul.sub-menu > li > a {
+        background-color: #333;
+        border: 1px solid #444;
+        border-top: none;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 12px;
+    }
+
+        ul.sub-menu > li > a:hover {
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+
+    ul.sub-menu > li:first-child {
+        border-top: 3px solid #0099cc;
+    }
+
+    ul.sub-menu ul.sub-menu > li:first-child {
+        border-top: 1px solid #444;
+    }
+
+    ul.sub-menu > li:last-child > a {
+        border-radius: 0 0 2px 2px;
+    }
+
+    ul.sub-menu > li > a.parent {
+        background-image: url(../../img/arrow.png);
+        background-size: 5px 9px;
+        background-repeat: no-repeat;
+        background-position: 95% center;
+    }
+
+#main-menu li:hover > ul.sub-menu {
+    display: block; /* show the submenu */
+}
+
+@media all and (max-width: 700px) {
+
+    #navigation {
+        position: static;
+        margin-top: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-menu {
+        display: none;
+        float: none;
+    }
+
+        #main-menu li {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-menu > li {
+            margin-top: -1px;
+        }
+
+            #main-menu > li:first-child {
+                margin-top: 0;
+            }
+
+            #main-menu > li > a {
+                background-color: #333;
+                border: 1px solid #444;
+                color: #bbb;
+                display: block;
+                font-size: 14px;
+                padding: 12px !important;
+                padding: 0;
+            }
+
+        #main-menu li > a:hover {
+            background-color: #444;
+        }
+
+        #main-menu > li.parent {
+            background: none !important;
+            padding: 0;
+        }
+
+        #main-menu > li:hover > a,
+        #main-menu > li.current-menu-item > a {
+            border: 1px solid #444 !important;
+            color: #fff !important;
+        }
+
+    ul.sub-menu {
+        display: block;
+        margin-top: -1px;
+        margin-left: 20px;
+        position: static;
+        padding: 0;
+        width: inherit;
+    }
+
+        ul.sub-menu > li:first-child {
+            border-top: 1px solid #444 !important;
+        }
+
+        ul.sub-menu > li > a.parent {
+            background: #333 !important;
+        }
+}
+
+/*new add*/
+
+#first {
+    margin-right: -160px;
+}
+
+    #first ul li {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    #first ul {
+        display: inline-block;
+        margin-top: -71px;
+    }
+
+        #first ul li a {
+            color: #fff;
+        }
+
+#background {
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.view {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: #212121;
+    width: 100%;
+    height: 50px;
+    margin-top: 605px;
+    color: #fff;
+}
+
+.copy {
+    margin-top: 10px;
+}
+
+
+.breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+    margin-left: 41%;
+    margin-top: 28px;
+}
+
+    .breadcrumb a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 36px;
+        color: white;
+        /*need more margin on the left of links to accomodate the numbers*/
+        padding: 0 10px 0 60px;
+        background: #666;
+        background: linear-gradient(#666, #333);
+        position: relative;
+    }
+        /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+        .breadcrumb a:first-child {
+            padding-left: 46px;
+            border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+        }
+
+            .breadcrumb a:first-child:before {
+                left: 14px;
+            }
+
+        .breadcrumb a:last-child {
+            border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+            padding-right: 20px;
+        }
+
+        /*hover/active styles*/
+        .breadcrumb a.active, .breadcrumb a:hover {
+            background: #333;
+            background: linear-gradient(#333, #000);
+        }
+
+            .breadcrumb a.active:after, .breadcrumb a:hover:after {
+                background: #333;
+                background: linear-gradient(135deg, #333, #000);
+            }
+
+        /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+        .breadcrumb a:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -18px; /*half of square's length*/
+            /*same dimension as the line-height of .breadcrumb a */
+            width: 36px;
+            height: 36px;
+            /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+            transform: scale(0.707) rotate(45deg);
+            /*we need to prevent the arrows from getting buried under the next link*/
+            z-index: 1;
+            /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+            background: #666;
+            background: linear-gradient(135deg, #666, #333);
+            /*stylish arrow design using box shadow*/
+            box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4), 3px -3px 0 2px rgba(255, 255, 255, 0.1);
+            /*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+            border-radius: 0 5px 0 50px;
+        }
+        /*we dont need an arrow after the last link*/
+        .breadcrumb a:last-child:after {
+            content: none;
+        }
+/*we will use the :before element to show numbers*/
+
+
+.flat a, .flat a:after {
+    background: white;
+    color: black;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+    .flat a:before {
+        background: white;
+        box-shadow: 0 0 0 1px #ccc;
+    }
+
+    .flat a:hover, .flat a.active,
+    .flat a:hover:after, .flat a.active:after {
+        background: #0099cc;
+        color: #fff;
+    }
+
+.report {
+    margin-left: 47%;
+    margin-top: 125px;
+    font-size: 20px;
+}
+
+
+.ibox-content {
+    height: 533px;
+    border: 1px solid #E0E0E0;
+    border-image: none;
+    width: 90%;
+    margin-left: 69px;
+}
+
+
+
+.export {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.check {
+    margin-top: 30px;
+}
+
+.count {
+    margin-left: 280px;
+}
+
+.change {
+    color: #616161;
+}
+
+.topper {
+    height: 70px;
+    /*background-color: #364f6b;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+    background: rgb(179,220,237); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.head2 {
+    height: 30px;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    ;
+    border-radius: 21px;
+    /*background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );*/
+}
+
+body {
+    background: #000;
+    padding-top: 10px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+}
+
+
+    p a {
+        color: lime;
+        text-decoration: none;
+    }
+
+p {
+    margin: 18px 106px 10px;
+}
+
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+
+
+
+
+
+.dropdown-menu.pull-right {
+    right: 0px;
+    left: auto;
+}
+
+
+
+
+
+

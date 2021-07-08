@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <style>
+    .xxmodal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        z-index: 99;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    .xxmodal:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .xxmodal > article {
+        position: relative;
+        width: 400px;
+        margin: 10% auto;
+        padding: 5px, 20px, 13px, 20px;
+        background: #fff;
+    }
+
+    .xxmodal__close {
+        position: absolute;
+        top: -10px;
+        right: -12px;
+        background: #797979;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 25px;
+        text-align: center;
+        width: 24px;
+    }
+  </style>
+  <body>
+    <a href=#modal__open>More Info</a>
+  <div id="modal__open" class="xxmodal">
+      <article>
+          <a href="#close" title="Close" class="xxmodal__close">X</a>
+          <h3>Lorem Ipsum Dolor</h3>
+          <h4><time>2018-01-01</time></h4>
+          <p>Consectetur adipisicing elit, sed do eiusmod elit ....</p>
+      </article>
+  </div>
+  </body>
+</html>

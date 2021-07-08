@@ -1,0 +1,823 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Business List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+ 
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+   
+    <script href="Plugins/jquery/jquery.min.js"></script>
+     <script href="Plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+   
+<body class=" hero-image">
+
+  
+    <div class="zcontainer-fluid ">
+        <!--1.top-nav-->
+        <div class="top-nav" style="">
+            <nav class="main-header navbar navbar-expand-md navbar-dark p-0 m-0">
+                <div class="container col-md-12" style="margin-right:1%;margin-left: 1%;">
+                    <header class="blog-header col-md-12">
+                        
+                        <div class="col-md-12 zrow flex-nowrap justify-content-between align-items-center zclass1 " style="white-space:nowrap;">
+                            <div class="col-2 pt-1 ">
+                                <p style="font-size: 16px;color:#fff;font-family: cursive;margin-bottom: 0rem;white-space:nowrap;">
+                                    BUSINESS LIST
+                                </p>
+                            </div>
+                            <div class="col-2 pt-1 " id="top-manu">
+
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Manu
+                                    </a>
+
+                                    <div class="dropdown-menu m-2 p-4" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item btn btn-outline-warning active m-2" style=" box-shadow: 0.5px 0.5px #888888;font-size:17px;" href="home.html">Introduction</a>
+                                        <a class="dropdown-item btn btn-outline-warning m-2" style=" box-shadow: 0.5px 0.5px #888888;font-size:17px;" href="findArea.html">Find Area</a>
+                                        <a class="dropdown-item btn btn-outline-warning m-2" style=" box-shadow: 0.5px 0.5px #888888;font-size:17px;" href="findPincode.html">Find Pincode</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-8 text-center zclass4">
+                                <div class="collapse navbar-collapse order-3" style="padding-top:10px;">
+                                    <ul class="nav nav-pills">
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class="btn btn-outline-warning active" style=" box-shadow: 0.5px 0.5px #888888;font-size:17px;" href="home.html">Introduction</a>&nbsp;
+                                        </li>
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class=" btn btn-outline-warning" style=" box-shadow: 0.5px 0.5px #888888;font-size:17px;" href="findArea.html"> Find Area </a>&nbsp;
+                                        </li>
+                                        <li class="nav-item" style="margin-right: 15px;">
+                                            <a id="" class=" btn btn-outline-warning" style=" box-shadow: 0.5px 0.5px #888888;font-size:17px;" href="findPincode.html"> Find Pincode</a>&nbsp;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2 d-flex justify-content-end align-items-center zclass2" style="font-size: 16px;color: #fff;">
+                                <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto" style="text-align:right;margin-right:1%;">
+                                    <li class="nav-item dropdown" style="white-space:nowrap;margin-right: 4.5rem;">
+                                        <!--<p style="margin-bottom: 0px;">
+                    <i class="fas fa-user" style="color: #fbff00;"></i> &nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-sign-in-alt" style="color: #fbff00;"></i> &nbsp;login&nbsp;&nbsp;
+
+                </p>-->
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </nav>
+        </div>
+        <div class="card m-4">
+          
+            <div class="card-body p-0">
+                <div class="active tab-pane m-4">
+                    <div class="col-md-8 p-3">
+                        <div class="card">
+                            <div class="card-header"style="color:#fff;">
+                                <h3 class="card-title">About Pincode :</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Long form of Pincode is <strong>Postal Index Number</strong>. Pincode is
+                                    used by Indian Post to identify specific area.
+                                </p>
+
+                               
+                                    
+                               
+                                <p>
+                                    <b>History of Pincode : </b>Pincode system was introduced on 15 August 1972 by Shriram Bhikaji
+                                    Velankar, an additional secretary in the Union Ministry of Communications.
+                                    The system was introduced to simplify the manual sorting and delivery of
+                                    courier by eliminating confusion over incorrect addresses, similar place
+                                    names, and different languages used by the public. He divided Indian region
+                                    in nine postal zones. Out of which eight are regional zones &amp; one is
+                                    reserved for Indian Army and is often referred as functional zone. Pincode
+                                    in India consists of 6 digits.
+                                </p>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                       
+                        <p>
+                            (<b>note :</b> First digit from that refers to regional
+                            zone. Below table indicates which number is used for which zone.)
+                        </p>
+
+                        <table class="table table-bordered text-center col-md-12">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>
+                                        <p align="center">
+                                            <strong>1st digit of PIN</strong>
+                                        </p>
+                                    </th>
+                                    <th>
+                                        <p align="center">
+                                            <strong>Zone</strong>
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            1
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Delhi, Haryana, Punjab, Himachal Pradesh, Jammu and
+                                            Kashmir, Chandigarh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            2
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Uttar Pradesh, Uttarakhand
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            3
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Rajasthan, Gujarat, Daman and Diu, Dadra and Nagar Haveli
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            4
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Maharashtra, Goa, Madhya Pradesh, Chhattisgarh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            5
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Telangana, Andhra Pradesh, Karnataka
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            6
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Tamil Nadu, Kerala, Puducherry, Lakshadweep
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            7
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            West Bengal, Odisha, Arunachal Pradesh, Nagaland, Manipur,
+                                            Mizoram, Tripura, Meghalaya, Andaman and Nicobar Islands,
+                                            Assam, Sikkim
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            8
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Bihar, Jharkhand
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p align="center">
+                                            9
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Army Post Office (APO), Field Post Office (FPO)
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                  
+                    
+                    <div class="col-md-4 p-3">
+                        <p >
+                           (<b>note :</b> Second digit indicates subzone. So if we consider first two digit it goes
+                            to state level. Below table indicates which Indian state pincode starts
+                            with which prefix.)
+                        </p>
+                        <p>
+                            (<b>note :</b>The third digit along with first two digit indicates district of that zone
+                            where as final three digits indicates individual post office in that
+                            district.)
+                        </p>
+                        <table class="table-bordered table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>
+                                        <p align="center">
+                                            <strong>PIN prefix</strong>
+                                        </p>
+                                    </th>
+                                    <th>
+                                        <p align="center">
+                                            <strong>Region</strong>
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <p>
+                                            11
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Delhi
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            12–13
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Haryana
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            14–15
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Punjab
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            16
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Chandigarh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            17
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Himachal Pradesh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            18–19
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Jammu and Kashmir
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            20–28
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Uttar Pradesh, Uttarakhand
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            30–34
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Rajasthan
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            396210
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Daman and Diu
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            396
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Dadra and Nagar Haveli
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            36–39
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Gujarat
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            403
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Goa
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            40–44
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Maharashtra
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            45–48
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Madhya Pradesh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            49
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Chhattisgarh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            50
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Telangana
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            51–53
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Andhra Pradesh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            56–59
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Karnataka
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            605
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Puducherry
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            60–66
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Tamil Nadu
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            682
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Lakshadweep
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            67–69
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Kerala
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            737
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Sikkim
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            744
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Andaman and Nicobar Islands
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            70–74
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            West Bengal
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            75–77
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Odisha
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            78
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Assam
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            790–792
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Arunachal Pradesh
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            793–794
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Meghalaya
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            795
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Manipur
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            796
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Mizoram
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            797–798
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Nagaland
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            799
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Tripura
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            80–85
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Bihar, Jharkhand
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            90–99
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Army Postal Service
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.card-body -->
+        </div>
+
+       
+
+
+
+
+
+    </div>
+    
+    
+     <!--3.section-product-slider-->
+  
+
+
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery --><!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script src="plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+
+<script>
+
+    $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+
+        //Datemask dd/mm/yyyy
+        $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+        //Datemask2 mm/dd/yyyy
+        $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+        //Money Euro
+        $('[data-mask]').inputmask()
+
+        //Date range picker
+        $('#reservation').daterangepicker()
+        //Date range picker with time picker
+        $('#reservationtime').daterangepicker({
+            timePicker: true,
+            timePickerIncrement: 30,
+            locale: {
+                format: 'MM/DD/YYYY hh:mm A'
+            }
+        })
+        //Date range as a button
+        $('#daterange-btn').daterangepicker(
+            {
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                },
+                startDate: moment().subtract(29, 'days'),
+                endDate: moment()
+            },
+            function (start, end) {
+                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+            }
+        )
+
+        //Timepicker
+        $('#timepicker').datetimepicker({
+            format: 'LT'
+        })
+
+        //Bootstrap Duallistbox
+        $('.duallistbox').bootstrapDualListbox()
+
+        //Colorpicker
+        $('.my-colorpicker1').colorpicker()
+        //color picker with addon
+        $('.my-colorpicker2').colorpicker()
+
+        $('.my-colorpicker2').on('colorpickerChange', function (event) {
+            $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+        });
+
+        $("input[data-bootstrap-switch]").each(function () {
+            $(this).bootstrapSwitch('state', $(this).prop('checked'));
+        });
+
+    })
+</script>
+
+</body>
+</html>

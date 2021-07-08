@@ -1,0 +1,180 @@
+
+        .zinput, .select2-container--default .select2-selection--single {
+            height: calc(4.00rem + 2px) !important;
+           
+        }
+
+        .main-header {
+            border-bottom: 0px;
+        }
+
+        .navbar {
+            border-radius: 0px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            padding-left: 0;
+            height: auto;
+            margin-top: 0px;
+        }
+
+        .bg-white-transparent {
+            background-color: rgba(255, 255, 255, 0.18) !important;
+        }
+
+        .zcontainer-fluid {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .zdropbtn {
+            background-color: rgba(0, 0, 0, 0.32);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .zdropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .zdropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+            .zdropdown-content a {
+                color: black;
+                padding: 5px 10px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .zdropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .zdropdown:hover .zdropdown-content {
+            display: block;
+        }
+
+        .zdropdown:hover .zdropbtn {
+            background-color: #ffc107;
+        }
+
+        .hero-image {
+            background: linear-gradient(87deg, rgba(1, 63, 77, 0.90), rgba(61, 0, 81, 0.90) 100%),url(content/css/img/HERO.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: static;
+        }
+        body{
+            overflow-x:hidden;
+        }
+        .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+}
+        .zlable {
+    color: #fff;
+    padding-bottom: 4px;
+    border-radius: 3px;
+}
+        .select2-container{
+            width:100%!important;
+        }
+        .select2-container--open{
+            font-size:16px!important;
+        }
+        .navbar-dark {
+        background-color: rgba(52, 58, 64, 0.7);
+}
+      .card-header {
+         background-color: rgba(25, 31, 92, 0.9) !important;
+         }
+        .card{
+             background-color: rgba(255, 255, 255, 0.85)!important;
+        }
+        .card-title{
+            font-size:20px;
+        }
+        table,thead,tr,td,th{
+            border:1px solid #5f5f5f!important;
+            padding:2px!important;
+        }
+        .thead-dark{
+            white-space:nowrap;
+        }
+
+.tab-pane{
+    
+    font-size:16px;
+}
+#top-manu{
+    display:none;
+}
+.zrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+.dropdown-item {
+    border: 1px solid #827a14;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    #top-manu {
+        display: block;
+    }
+    .zrow {
+        display:block;
+      
+    }
+}
+.dataTables_length,.dataTables_filter{
+    font-size: 14px;
+}
+
+.dataTables_filter .form-control{
+    font-size: 17px;
+    height: calc(2.5rem + 2px);
+}
+
+.dataTables_length .form-control{
+    font-size: 16px;
+    height: calc(2.5rem + 2px);
+}
+#example_filter {
+    float: right;
+    white-space:nowrap!important;
+    
+}
+
+#example_paginate {
+    float: right;
+
+}
+/*
+.dataTables_length{
+    display:none;
+}
+.dataTables_filter{
+    display:none;
+}*/
